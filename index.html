@@ -4,42 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Landing Page | Flexbox</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="flex-container-nav">
-        <div class="logo">PznFrogs</div>
-        <ul class="nav">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">PznFrogs</div>
+      <ul class="nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="flex-container-header">
+  <header class="header">
+    <div class="container">
       <div class="header-left">
         <h1>Poison Frogs are Awesome!</h1>
-        <p>This site was created by brianveebee to provide interesting facts about poison frogs.</p>
+        <p>
+          This site was created by brianveebee to provide interesting facts about poison frogs.
+        </p>
         <button type="submit">Sign up</button>
       </div>
-      <div class="header-right">
         <img class="img-header" src="img/ben-Azureus-frog.svg" alt="Blue poison dart frog with black spots">
-      </div>
     </div>
   </header>
   
   <section class="boxes">
-    <div class="flex-container-boxes">
+    <div class="flex-boxes container">
       <div class="box">
         <a href="add link">
           <img src="" alt="">
@@ -70,25 +70,29 @@
     </div>
   </section>
 
-  <section class="quote-container">
-    <cite><q>If we can discover the meaning in the trilling of a frog, perhaps we may understand why it is for us not merely noise but a song of poetry and emotion.</q></cite>
-    <p><strong>- Adrian Forsyth</strong></p>
+  <section class="gray-block">
+    <div class="quote container">
+      <cite><q>If we can discover the meaning in the trilling of a frog, perhaps we may understand why it is for us not merely noise but a song of poetry and emotion.</q></cite>
+      <p><strong>- Adrian Forsyth</strong></p>
+    </div>
   </section>
 
-  <section class="call-to-action">
-    <div class="cta-left">
-      <div class="container-cta">
-        <h2>Want more fun facts?</h2>
+  <section class="flex-cta">
+    <div class="container">
+      <div class="cta-left">
+        <h2>Want more interesting facts?</h2>
         <p>Sign up for our weekly newsletter to keep learning!</p>
       </div>
-    </div>
-    <div class="cta-right">
-      <button type="submit">Sign up</button>
+      <div class="cta-right">
+        <button type="submit">Sign up</button>
+      </div>
     </div>
   </section>
 
-  <footer class="footer-container">
-    <p>Copyright &#169; brianveebee 2022</p>
+  <footer>
+    <div class="footer container">
+      <p>Copyright &#169; brianveebee 2022</p>
+    </div>
   </footer>
 </body>
 </html>
