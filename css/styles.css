@@ -27,10 +27,6 @@ ul {
   list-style-type: none;
 }
 
-header button {
-  margin-top: 20px;
-}
-
 button {
   font-size: 16px;
   background-color: #0583d2;
@@ -38,6 +34,10 @@ button {
   padding: 5px;
   height: 35px;
   width: 80px;
+}
+
+header button {
+  margin-top: 20px;
 }
 
 .container {
@@ -116,6 +116,8 @@ footer {
 }
 
 .box img {
+  height: 120px;
+  width: 200px;
   border-radius: 5px;
   transition: transform .2s;
 }
@@ -134,7 +136,7 @@ footer {
 }
 
 .box p{
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .boxes,
@@ -150,7 +152,6 @@ footer {
 
 .flex-boxes {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
@@ -178,6 +179,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  max-width: 700px;
 }
 
 .footer {
