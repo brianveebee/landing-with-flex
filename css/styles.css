@@ -115,9 +115,22 @@ footer {
   width: 220px;
 }
 
+.box img {
+  border-radius: 5px;
+  transition: transform .2s;
+}
+
+.box img:hover {
+  transform: scale(1.05);
+}
+
 .box figcaption {
   font-size: 12px;
   font-weight: bold;
+}
+
+.box h3 {
+  padding: 10px 0;
 }
 
 .box p{
@@ -139,6 +152,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .gray-block {
