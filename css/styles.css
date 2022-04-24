@@ -15,6 +15,7 @@ body{
 }
 
 img {
+  height: auto;
   max-width: 100%;
 }
 
@@ -109,9 +110,31 @@ footer {
   margin-top: 60px;
 }
 
+.box {
+  width: 220px;
+}
+
+.box figcaption {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .boxes,
 .flex-cta {
   background-color: #fff;
+}
+
+.boxes h2 {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 28px;
+}
+
+.flex-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
 .gray-block {
