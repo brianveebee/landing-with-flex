@@ -66,7 +66,8 @@ footer {
   font-weight: bold;
 }
 
-.navbar a:hover{
+.navbar a:hover,
+.footer a:hover{
   color: #61b0b7;
 }
 
@@ -189,6 +190,12 @@ footer {
  align-items: center;
  justify-content: center;
  height: 100%;
+}
+
+.footer a {
+  color: #fff;
+  padding-left: 8px;
+  font-size: 20px;
 }
 
 /* Media Queries */
