@@ -8,15 +8,16 @@
 
 html {
   position: relative;
-  min-height: 100%;
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #b8e3ff;
 }
 
 img {
@@ -40,15 +41,16 @@ button {
   width: 80px;
 }
 
+header {
+  background-color: #b8e3ff;
+}
+
 header button {
   margin-top: 20px;
 }
 
 footer {
-  position: absolute;
-  overflow: hidden;
-  bottom: 0;
-  width: 100%;
+  margin-top: auto;
 }
 
 .container {
@@ -199,15 +201,14 @@ footer,
 .flex-cta {
   display: flex;
   padding: 30px 15%;
-  flex-grow: 1;
 }
 
 .flex-cta .container {
   display: flex;
   align-items: center;
-  justify-content: center;
   max-width: 700px;
   gap: 20px;
+  flex-basis: auto;
 }
 
 .footer {
@@ -238,8 +239,8 @@ footer,
   }
 
   .flex-cta .container {
-    flex-direction: column;
     text-align: center;
+    justify-content: center;
   }
 }
 
