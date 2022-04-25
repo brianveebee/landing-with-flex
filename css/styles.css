@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -38,6 +43,13 @@ button {
 
 header button {
   margin-top: 20px;
+}
+
+footer {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
 }
 
 .container {
@@ -109,7 +121,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  padding-top: 30px;
 }
 
 .box {
@@ -125,6 +137,13 @@ footer {
 
 .box img:hover {
   transform: scale(1.05);
+}
+
+.box img,
+.box figcaption {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .box figcaption {
@@ -173,14 +192,16 @@ footer {
 }
 
 .flex-cta {
-  padding: 60px 15%;
+  display: flex;
+  padding: 30px 15%;
+  flex-grow: 1;
 }
 
 .flex-cta .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  background-color: #fff;
   max-width: 700px;
   gap: 20px;
 }
@@ -200,7 +221,7 @@ footer {
 
 /* Media Queries */
 
-@media(max-width: 874px) {
+@media(max-width: 858px) {
   .header .container {
     text-align: center;
   }
@@ -211,6 +232,11 @@ footer {
 
   .gray-block {
     padding: 30px;
+  }
+
+  .flex-cta .container {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
